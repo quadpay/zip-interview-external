@@ -111,3 +111,7 @@ customer.
 
 - .NET 10, C# 14, ASP.NET Core.
 - Tests use xUnit, Shouldly and AutoFixture.
+
+## MSC
+
+- The exercise will be provided at the start of the interview.
