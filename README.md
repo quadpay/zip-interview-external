@@ -17,9 +17,7 @@ dotnet build Zip.Promotions.Exercise.sln
 dotnet run --project src/Zip.Promotions.Exercise --no-launch-profile --urls "http://localhost:5199"
 ```
 
-The .NET 10 SDK is the only requirement — no Docker, no database, no cache server. A clean build and a service that
-starts is the expected state; what the service *does* is the exercise. If you run `dotnet test` you will be told
+The .NET 10 SDK is the only requirement — no Docker, no database, no cache server. If you run `dotnet test` you will be told
 there are no tests, which is also expected.
 
-Use the editor and tooling you would normally use. Each exercise says where AI assistance is welcome and where we
-would rather see you work unaided.
+Use the editor and tooling you would normally use. 
