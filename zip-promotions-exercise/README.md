@@ -5,8 +5,6 @@ qualifies for, given who the customer is and what they have bought before.
 
 Everything runs in process. No Docker, no database, no cache server.
 
-**Your tasks are in [EXERCISE.md](EXERCISE.md).** This file is reference material — skim it, come back to it.
-
 ## Running it
 
 .NET 10 SDK is the only requirement.
@@ -109,15 +107,7 @@ Three customers are seeded:
 Any other GUID starts with no history, so generate a fresh one (`[guid]::NewGuid()`) whenever you need a brand-new
 customer.
 
-## Money and time
-
-Monetary values are `decimal` at two decimal places. `TimeProvider` is injected everywhere time matters, so tests
-advance a `FakeTimeProvider` rather than sleeping. The endpoint tests freeze it, so the dates in `appsettings.json`
-stay fixed relative to "now" no matter what today's date is. Running the service by hand uses the real clock.
-
 ## Constraints
 
 - .NET 10, C# 14, ASP.NET Core.
-- No Entity Framework, Dapper, or any real database or cache client.
-- No MediatR, AutoMapper, or third-party DI containers.
 - Tests use xUnit, Shouldly and AutoFixture.
